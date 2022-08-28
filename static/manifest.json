@@ -1,0 +1,7 @@
+{
+  "name": "Demo Flask Progressive Web App (PWA)",
+  "short_name": "Flask PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

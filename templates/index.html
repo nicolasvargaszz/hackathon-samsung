@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Buen provecho</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="../static/lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="../static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <link href="../static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />    
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+        <!-- Template Stylesheet -->
+        <link href="../static/css/style.css" rel="stylesheet">
+
+        <style>
+            .gradient {
+              background: linear-gradient(90deg, #055d51 0%, #57c3b5 100%);
+            }
+            .custom-color {
+              color: #f97316
+            }
+          </style>
+           <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Buen <span>Provecho</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="feature.html" class="nav-item nav-link">Feature</a>
+                        <a href="team.html" class="nav-item nav-link">Chef</a>
+                        <a href="{{url_for('menu_page')}}" class="nav-item nav-link">Menu</a>
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="../static/img/carousel-1.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Best <span>Quality</span> Ingredients</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="">View Menu</a>
+                                <a class="btn custom-btn" href="">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="../static/img/carousel-2.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>World’s <span>Best</span> Chef</h1>
+                            <p>
+                                Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="">View Menu</a>
+                                <a class="btn custom-btn" href="">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="../static/img/carousel-3.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Fastest Order <span>Delivery</span></h1>
+                            <p>
+                                Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="">View Menu</a>
+                                <a class="btn custom-btn" href="">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="../static/img/logo.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>Motivacion de: </p>
+                                <h2>Buen provecho</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    El 40% de la producción de alimentos no es consumida anualmente a nivel global.  Más de 2.250 millones de toneladas son desperdiciadas. 
+                                    Buen provecho, alimentación consciente.
+                                    Ayuda a combatir el desperdicio de alimentos y ahorra dinero, comiendo de la mejor manera a precios insuperables.
+                                    Como empresa, vende tus excedentes rápidamente y recupera inversión.  
+                                    Mayor beneficio, menor desperdicio.
+                                </p>
+                                <a class="btn custom-btn" href="">Saber mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Booking Start -->
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <p>Contas con una empresa gastronomica y tenes exedentes ?</p>
+                                <h2>Regisitrate e ingresa tus datos para poder solucionar tu problema</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Tenes que probar!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="booking-form">
+                            <form>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Name" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Mobile" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn custom-btn" type="submit">Comenzar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+                
+        <h1 class="w-full my-2 text-3xl font-bold leading-tight text-center text-black-800">
+            Que te gustaria pedir 
+          </h1>
+          <div class="mx-auto flex justify-evenly self-center">
+            <button id="gUMbtn" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Presione para iniciar grabacion 
+            </button>
+            <div class="text-black mt-10 hidden justify-center" id="texto-recording">
+              <p>Grabando... </p>
+            </div>
+            <button id='stop' class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Parar
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div >
+            <ul  class="list-unstyled" id='ul'>
+            </ul>
+            <p class="text-black hidden text-center px-14" id="texto-audio">
+              ¿Queres enviar este audio?
+            </p>
+          </div> 
+        </div>
+        <div class="mx-auto flex justify-evenly">
+        <a href="{{url_for('menu_page')}}">
+          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline        transform transition hover:scale-105 duration-300 ease-in-out">
+                Enviar
+            </button>
+        </a>
+        </div>
+        <script>
+            var scrollpos = window.scrollY;
+            var header = document.getElementById("header");
+            var navcontent = document.getElementById("nav-content");
+            var navaction = document.getElementById("navAction");
+            var brandname = document.getElementById("brandname");
+            var toToggle = document.querySelectorAll(".toggleColour");
+      
+            document.addEventListener("scroll", function () {
+              /*Apply classes for slide in bar*/
+              scrollpos = window.scrollY;
+      
+              if (scrollpos > 10) {
+                header.classList.add("gradient");
+                navaction.classList.remove("bg-white");
+                navaction.classList.add("gradient");
+                navaction.classList.remove("text-gray-800");
+                navaction.classList.add("text-white");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                  toToggle[i].classList.add("text-gray-800");
+                  toToggle[i].classList.remove("text-white");
+                }
+                header.classList.add("shadow");
+                navcontent.classList.remove("bg-gray-100");
+                navcontent.classList.add("bg-white");
+              } else {
+                header.classList.remove("bg-white");
+                navaction.classList.remove("gradient");
+                navaction.classList.add("bg-white");
+                navaction.classList.remove("text-white");
+                navaction.classList.add("text-gray-800");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                  toToggle[i].classList.add("text-white");
+                  toToggle[i].classList.remove("text-gray-800");
+                }
+      
+                header.classList.remove("shadow");
+                navcontent.classList.remove("bg-white");
+                navcontent.classList.add("bg-gray-100");
+              }
+            });
+        </script>
+        <script>
+            /*Toggle dropdown list*/
+            /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+      
+            var navMenuDiv = document.getElementById("nav-content");
+            var navMenu = document.getElementById("nav-toggle");
+      
+            document.onclick = check;
+            function check(e) {
+              var target = (e && e.target) || (event && event.srcElement);
+      
+              //Nav Menu
+              if (!checkParent(target, navMenuDiv)) {
+                // click NOT on the menu
+                if (checkParent(target, navMenu)) {
+                  // click on the link
+                  if (navMenuDiv.classList.contains("hidden")) {
+                    navMenuDiv.classList.remove("hidden");
+                  } else {
+                    navMenuDiv.classList.add("hidden");
+                  }
+                } else {
+                  // click both outside link and outside menu, hide menu
+                  navMenuDiv.classList.add("hidden");
+                }
+              }
+            }
+            function checkParent(t, elm) {
+              while (t.parentNode) {
+                if (t == elm) {
+                  return true;
+                }
+                t = t.parentNode;
+              }
+              return false;
+            }
+        </script>
+        <script src="../static/js/audio.js"></script>
+        <!-- Food Start -->
+        <div class="food">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-burger"></i>
+                            <h2>Hamburguesas</h2>
+                            <p>
+                                Los restaurantes de hamburguesas que cuenten con exdentes estaran publicando sus packs aqui!
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-snack"></i>
+                            <h2>Bebidas</h2>
+                            <p>
+                                Los restaurantes de bebidas que cuenten con exdentes estaran publicando sus packs aqui!
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-cocktail"></i>
+                            <h2>Cosas dulces</h2>
+                            <p>
+                                Los restaurantes de cosas dulces que cuenten con exdentes estaran publicando sus packs aqui!
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/lib/easing/easing.min.js"></script>
+        <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="../static/lib/tempusdominus/js/moment.min.js"></script>
+        <script src="../static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="../static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="../static/mail/jqBootstrapValidation.min.js"></script>
+        <script src="../static/mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../static/js/main.js"></script>
+    </body>
+</html>
