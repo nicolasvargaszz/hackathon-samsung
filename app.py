@@ -18,6 +18,9 @@ def menu_page():
 def sw():
     return app.send_static_file('service-worker.js')
 
+@app.route("/contact_page")
+def contact():
+    return render_template("contact.html")
 
 
 @app.route('/uploader', methods = ['GET', 'POST'])
